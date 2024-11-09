@@ -2522,7 +2522,7 @@ namespace DSPRE.Resources {
             [0x034D] = "TextPartyPokemonDefault",
             [0x034E] = "TextSpecies",
             [0x034F] = "TextUnclaimedStarterName",
-            [0x0350] = "TextFashion"
+            [0x0350] = "TextFashion",
             [0x0351] = "TextTrainerClass",
             [0x0352] = "TextSealPlural",
             [0x0353] = "TextCapitalize",
