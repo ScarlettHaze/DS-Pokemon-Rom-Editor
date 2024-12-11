@@ -36,10 +36,6 @@ jobs:
     - name: Fetch tags
       run: git fetch --prune --unshallow --tags
 
-    - name: Delete previous release
-      run: |
-        gh release delete --yes canary
-
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Get current date
