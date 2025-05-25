@@ -3,7 +3,7 @@ name: DSPRE Canary Build
 on:
   push:
     branches:
-      - flyeditor  # Trigger only on pushes to the main branch
+      - main  # Trigger only on pushes to the main branch
 
 permissions:
   contents: write
@@ -14,6 +14,7 @@ env:
 
 jobs:
   build:
+    if: github.repository == 'AdAstra-LD/DS-Pokemon-Rom-Editor'
     runs-on: windows-latest
 
     steps:
@@ -35,6 +36,10 @@ jobs:
 
     - name: Fetch tags
       run: git fetch --prune --unshallow --tags
+
+    - name: Delete previous release
+      run: |
+        gh release delete --yes canary
 
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

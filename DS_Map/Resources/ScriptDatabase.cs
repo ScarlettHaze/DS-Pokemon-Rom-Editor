@@ -247,7 +247,7 @@ namespace DSPRE.Resources {
             [0x0053] = "SetMusic",
             [0x0054] = "FadeOutMusic",
             [0x0055] = "FadeInMusic",
-
+            [0x0056] = "SetMusicPauseStatus",
             [0x0057] = "PlayFieldBGM",
 
             [0x0059] = "CheckChatotCry",
@@ -491,7 +491,7 @@ namespace DSPRE.Resources {
             [0x0182] = "SetBerryMulch",
             [0x0183] = "SetBerrySpecies",
             [0x0184] = "WateringAnimation",
-            [0x0185] = "TakeBerries",
+            [0x0185] = "HarvestBerries",
             [0x0186] = "SetOWDefaultPosition",
             [0x0187] = "SetOWPosition",
             [0x0188] = "SetOWDefaultMovement",
@@ -622,6 +622,7 @@ namespace DSPRE.Resources {
 
             [0x0246] = "CheckVersion",
             [0x0247] = "FirstPokemonInParty",
+            [0x0248] = "GetPartyPokemonTypes",
 
             [0x024E] = "GetLottoNumber",
             [0x024F] = "CheckWinLotto",
@@ -684,8 +685,7 @@ namespace DSPRE.Resources {
 
             [0x02C1] = "ShowSaveBox",
             [0x02C2] = "HideSaveBox",
-            [0x02C3] = "ScopeMode",
-
+            [0x02C3] = "ScopeMode",            
             [0x0333] = "SetFieldVolume",
         };
         public static Dictionary<ushort, byte[]> DPPtScrCmdParameters = new Dictionary<ushort, byte[]>() {
@@ -2297,10 +2297,10 @@ namespace DSPRE.Resources {
             [0x026C] = "SysFlagDisguiseSet",
             [0x026D] = "SetupLaboMOnsBall",
             [0x026E] = "GetOWDirection",
-            [0x026F] = "BonguriGetAnm",
-            [0x0270] = "GetBongColorNo",
-            [0x0271] = "AddBonguri",
-            [0x0272] = "BonguriName",
+            [0x026F] = "HarvestApricorn",
+            [0x0270] = "GetApricornColor",
+            [0x0271] = "GiveApricorn",
+            [0x0272] = "TextApricorn",
             [0x0273] = "FrontierSystemCall",
             [0x0274] = "FactorySetContinueNG",
             [0x0275] = "Guru2SetProc",

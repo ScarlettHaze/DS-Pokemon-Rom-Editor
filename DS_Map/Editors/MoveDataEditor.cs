@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 using System.Windows.Forms;
 using static DSPRE.MoveData;
 using MessageBox = System.Windows.Forms.MessageBox;
@@ -39,7 +40,7 @@ namespace DSPRE {
                 if (i >= db.Length || db[i] is null) {
                     battleSeqComboBox.Items.Add($"{i:D3} - Undocumented");
                 } else {
-                    battleSeqComboBox.Items.Add(db[i]);
+                    battleSeqComboBox.Items.Add($"{i:D3} - {db[i]}");
                 }
             }
 
@@ -274,7 +275,7 @@ namespace DSPRE {
                 return;
             }
 
-            currentLoadedFile.accuracy = (byte)powerNumericUpDown.Value;
+            currentLoadedFile.accuracy = (byte)accuracyNumericUpDown.Value;
             setDirty(true);
         }
 
