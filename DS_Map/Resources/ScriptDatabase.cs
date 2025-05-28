@@ -686,7 +686,9 @@ namespace DSPRE.Resources {
             [0x02C1] = "ShowSaveBox",
             [0x02C2] = "HideSaveBox",
             [0x02C3] = "ScopeMode",            
+
             [0x0333] = "SetFieldVolume",
+
         };
         public static Dictionary<ushort, byte[]> DPPtScrCmdParameters = new Dictionary<ushort, byte[]>() {
             [0x0000] = new byte[1] { 0 },
